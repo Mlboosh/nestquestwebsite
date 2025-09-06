@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security & Privacy - NestQuest</title>
+    <meta name="description" content="Learn how NestQuest protects your family's data with local storage, peer-to-peer sync, and zero cloud dependencies.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/nestquest.svg">
+    <link rel="icon" type="image/png" href="assets/icons/icon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="mode-toggle">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+            <img src="assets/ionicons.designerpack/sunny-outline.svg" alt="Light mode" class="light-icon">
+            <img src="assets/ionicons.designerpack/moon-outline.svg" alt="Dark mode" class="dark-icon">
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="assets/icons/icon.png" alt="NestQuest Logo" class="logo-image">
+                    <h1 class="logo">NestQuest</h1>
+                </div>
+                <nav class="nav-menu">
+                    <a href="index.html">Home</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="security.html" class="active">Security</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Security Hero -->
+    <section class="security-hero">
+        <div class="container">
+            <h1 class="page-title">Your Privacy is Our Priority</h1>
+            <p class="page-subtitle">
+                NestQuest is built with privacy-first architecture. Your family's data never leaves your control.
+            </p>
+        </div>
+    </section>
+
+    <!-- Security Features -->
+    <section class="security-features">
+        <div class="container">
+            <div class="security-grid">
+                <div class="security-card">
+                    <div class="security-icon">
+                        <img src="assets/ionicons.designerpack/phone-portrait-outline.svg" alt="Local Storage">
+                    </div>
+                    <h3>Local Data Storage</h3>
+                    <p>All your baby's data is stored directly on your device. No cloud servers, no external databases, complete local control.</p>
+                </div>
+
+                <div class="security-card">
+                    <div class="security-icon">
+                        <img src="assets/ionicons.designerpack/sync-outline.svg" alt="P2P Sync">
+                    </div>
+                    <h3>Peer-to-Peer Sync</h3>
+                    <p>Share data between caregivers using direct device-to-device sync via Bluetooth, NFC, and local WiFi. No middleman servers.</p>
+                </div>
+
+                <div class="security-card">
+                    <div class="security-icon">
+                        <img src="assets/ionicons.designerpack/shield-checkmark-outline.svg" alt="No Accounts">
+                    </div>
+                    <h3>No Account Required</h3>
+                    <p>Start using NestQuest immediately. No email signup, no password creation, no personal information collection.</p>
+                </div>
+
+                <div class="security-card">
+                    <div class="security-icon">
+                        <img src="assets/ionicons.designerpack/eye-off-outline.svg" alt="No Tracking">
+                    </div>
+                    <h3>Zero Tracking</h3>
+                    <p>No analytics, no crash reporting, no usage statistics. We literally don't know how you use the app.</p>
+                </div>
+
+                <div class="security-card">
+                    <div class="security-icon">
+                        <img src="assets/ionicons.designerpack/lock-closed-outline.svg" alt="Encryption">
+                    </div>
+                    <h3>End-to-End Encryption</h3>
+                    <p>All sync data is encrypted using industry-standard protocols. Only your paired devices can decrypt the information.</p>
+                </div>
+
+                <div class="security-card">
+                    <div class="security-icon">
+                        <img src="assets/ionicons.designerpack/download-outline.svg" alt="Data Export">
+                    </div>
+                    <h3>Complete Data Export</h3>
+                    <p>Export all your data anytime in standard formats. Your data is yours - take it anywhere, anytime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Details -->
+    <section class="technical-details">
+        <div class="container">
+            <h2 class="section-title">Technical Implementation</h2>
+            
+            <div class="tech-content">
+                <div class="tech-section">
+                    <h3>Data Architecture</h3>
+                    <ul>
+                        <li><strong>SQLite Database:</strong> All data stored in encrypted local database</li>
+                        <li><strong>No Cloud Dependencies:</strong> App functions completely offline</li>
+                        <li><strong>Device-Only Processing:</strong> All calculations and insights generated locally</li>
+                        <li><strong>Automatic Backups:</strong> Local device backups only (iCloud/Google Drive integration optional)</li>
+                    </ul>
+                </div>
+
+                <div class="tech-section">
+                    <h3>Sync Technology</h3>
+                    <ul>
+                        <li><strong>Bluetooth LE:</strong> Secure short-range data sharing</li>
+                        <li><strong>NFC:</strong> Tap-to-pair and instant sync</li>
+                        <li><strong>Local WiFi:</strong> Direct device connection on same network</li>
+                        <li><strong>AES-256 Encryption:</strong> Military-grade encryption for all transfers</li>
+                    </ul>
+                </div>
+
+                <div class="tech-section">
+                    <h3>Privacy Guarantees</h3>
+                    <ul>
+                        <li><strong>No Servers:</strong> We don't operate any data collection servers</li>
+                        <li><strong>No Third Parties:</strong> No analytics, advertising, or tracking SDKs</li>
+                        <li><strong>Open Source:</strong> Core privacy components will be open-sourced for audit</li>
+                        <li><strong>Regular Audits:</strong> Independent security reviews and penetration testing</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison -->
+    <section class="privacy-comparison">
+        <div class="container">
+            <h2 class="section-title">How We Compare</h2>
+            
+            <div class="comparison-table">
+                <div class="comparison-header">
+                    <div class="feature-col">Feature</div>
+                    <div class="nestquest-col">NestQuest</div>
+                    <div class="others-col">Other Apps</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-col">Data Storage</div>
+                    <div class="nestquest-col">
+                        <img src="assets/ionicons.designerpack/checkmark-circle-outline.svg" alt="Yes" class="check-icon">
+                        Local Device Only
+                    </div>
+                    <div class="others-col">
+                        <img src="assets/ionicons.designerpack/close-circle-outline.svg" alt="No" class="cross-icon">
+                        Cloud Servers
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-col">Account Required</div>
+                    <div class="nestquest-col">
+                        <img src="assets/ionicons.designerpack/close-circle-outline.svg" alt="No" class="cross-icon">
+                        No Account Needed
+                    </div>
+                    <div class="others-col">
+                        <img src="assets/ionicons.designerpack/checkmark-circle-outline.svg" alt="Yes" class="check-icon">
+                        Email & Password
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-col">Data Sharing</div>
+                    <div class="nestquest-col">
+                        <img src="assets/ionicons.designerpack/close-circle-outline.svg" alt="No" class="cross-icon">
+                        Never Shared
+                    </div>
+                    <div class="others-col">
+                        <img src="assets/ionicons.designerpack/checkmark-circle-outline.svg" alt="Yes" class="check-icon">
+                        Analytics & Ads
+                    </div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="feature-col">Works Offline</div>
+                    <div class="nestquest-col">
+                        <img src="assets/ionicons.designerpack/checkmark-circle-outline.svg" alt="Yes" class="check-icon">
+                        100% Offline
+                    </div>
+                    <div class="others-col">
+                        <img src="assets/ionicons.designerpack/close-circle-outline.svg" alt="No" class="cross-icon">
+                        Requires Internet
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>NestQuest</h3>
+                    <p>Transforming parenting into an engaging journey</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Product</h4>
+                        <a href="index.html#features">Features</a>
+                        <a href="index.html#download">Download</a>
+                        <a href="pricing.html">Pricing</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#">🐦</a>
+                    <a href="#">📷</a>
+                    <a href="#">📘</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NestQuest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

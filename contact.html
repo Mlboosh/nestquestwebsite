@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - NestQuest</title>
+    <meta name="description" content="Get in touch with the NestQuest team. We're here to help with any questions or feedback.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/nestquest.svg">
+    <link rel="icon" type="image/png" href="assets/icons/icon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="mode-toggle">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+            <img src="assets/ionicons.designerpack/sunny-outline.svg" alt="Light mode" class="light-icon">
+            <img src="assets/ionicons.designerpack/moon-outline.svg" alt="Dark mode" class="dark-icon">
+        </button>
+    </div>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo-container">
+                    <img src="assets/icons/icon.png" alt="NestQuest Logo" class="logo-image">
+                    <h1 class="logo">NestQuest</h1>
+                </div>
+                <nav class="nav-menu">
+                    <a href="index.html">Home</a>
+                    <a href="pricing.html">Pricing</a>
+                    <a href="security.html">Security</a>
+                    <a href="faq.html">FAQ</a>
+                    <a href="contact.html" class="active">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="page-title">Get in Touch</h1>
+            <p class="page-subtitle">
+                We'd love to hear from you. Send us a message and we'll respond as soon as possible.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="general">General Question</option>
+                                <option value="support">Technical Support</option>
+                                <option value="feature">Feature Request</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="privacy">Privacy Concern</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <img src="assets/ionicons.designerpack/send-outline.svg" alt="Send" class="btn-icon">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <h2>Other Ways to Reach Us</h2>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <img src="assets/ionicons.designerpack/mail-outline.svg" alt="Email">
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email Support</h3>
+                                <p>hello@nestquest.app</p>
+                                <span class="response-time">Usually responds within 24 hours</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <img src="assets/ionicons.designerpack/chatbubble-outline.svg" alt="Community">
+                            </div>
+                            <div class="contact-details">
+                                <h3>Community Forum</h3>
+                                <p>Join our parent community</p>
+                                <span class="response-time">Coming soon</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <img src="assets/ionicons.designerpack/logo-twitter.svg" alt="Social Media">
+                            </div>
+                            <div class="contact-details">
+                                <h3>Social Media</h3>
+                                <p>Follow us for updates</p>
+                                <span class="response-time">@nestquest_app</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Link -->
+                    <div class="faq-link">
+                        <h3>Before you contact us...</h3>
+                        <p>Check our FAQ page for quick answers to common questions.</p>
+                        <a href="faq.html" class="btn btn-secondary">
+                            <img src="assets/ionicons.designerpack/help-circle-outline.svg" alt="FAQ" class="btn-icon">
+                            View FAQ
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Privacy Notice -->
+    <section class="privacy-notice">
+        <div class="container">
+            <div class="privacy-card">
+                <div class="privacy-icon">
+                    <img src="assets/ionicons.designerpack/shield-checkmark-outline.svg" alt="Privacy">
+                </div>
+                <div class="privacy-content">
+                    <h3>Your Privacy Matters</h3>
+                    <p>We only use your contact information to respond to your message. We don't add you to mailing lists or share your information with third parties. Read our <a href="privacy.html">Privacy Policy</a> for more details.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>NestQuest</h3>
+                    <p>Transforming parenting into an engaging journey</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Product</h4>
+                        <a href="index.html#features">Features</a>
+                        <a href="index.html#download">Download</a>
+                        <a href="pricing.html">Pricing</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Support</h4>
+                        <a href="faq.html">FAQ</a>
+                        <a href="contact.html">Contact</a>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Legal</h4>
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="security.html">Security</a>
+                    </div>
+                </div>
+                
+                <div class="footer-social">
+                    <a href="#">🐦</a>
+                    <a href="#">📷</a>
+                    <a href="#">📘</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 NestQuest. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Get form data
+                const formData = new FormData(contactForm);
+                const data = Object.fromEntries(formData);
+                
+                // Simple validation
+                if (!data.name || !data.email || !data.subject || !data.message) {
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+                
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(data.email)) {
+                    alert('Please enter a valid email address.');
+                    return;
+                }
+                
+                // Simulate form submission
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalText = submitBtn.innerHTML;
+                
+                submitBtn.innerHTML = '<img src="assets/ionicons.designerpack/hourglass-outline.svg" alt="Sending" class="btn-icon"> Sending...';
+                submitBtn.disabled = true;
+                
+                // Simulate API call
+                setTimeout(() => {
+                    alert('Thank you for your message! We\'ll get back to you soon.');
+                    contactForm.reset();
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>

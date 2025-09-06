@@ -31,17 +31,43 @@ function initDarkMode() {
     const themeToggle = document.getElementById('theme-toggle');
     const body = document.body;
     
-    // Check for saved theme preference or default to light mode
+    // Function to get system preference
+    function getSystemTheme() {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            return 'dark';
+        }
+        return 'light';
+    }
+    
+    // Check for saved theme preference or use system preference
     const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'dark') {
+    const systemTheme = getSystemTheme();
+    const initialTheme = savedTheme || systemTheme;
+    
+    if (initialTheme === 'dark') {
         body.classList.add('dark-mode');
+    }
+    
+    // Listen for system theme changes
+    if (window.matchMedia) {
+        const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+        mediaQuery.addEventListener('change', function(e) {
+            // Only update if user hasn't manually set a preference
+            if (!localStorage.getItem('theme')) {
+                if (e.matches) {
+                    body.classList.add('dark-mode');
+                } else {
+                    body.classList.remove('dark-mode');
+                }
+            }
+        });
     }
     
     // Toggle theme
     themeToggle.addEventListener('click', function() {
         body.classList.toggle('dark-mode');
         
-        // Save preference
+        // Save preference (this overrides system preference)
         if (body.classList.contains('dark-mode')) {
             localStorage.setItem('theme', 'dark');
         } else {
