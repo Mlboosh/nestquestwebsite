@@ -56,3 +56,22 @@
   from = "/download"
   to = "https://apps.apple.com/app/nestquest"
   status = 302
+
+# Force HTTPS and canonical domain
+[[redirects]]
+  from = "http://nestquest.life/*"
+  to = "https://www.nestquest.life/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.nestquest.life/*"
+  to = "https://www.nestquest.life/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://nestquest.life/*"
+  to = "https://www.nestquest.life/:splat"
+  status = 301
+  force = true

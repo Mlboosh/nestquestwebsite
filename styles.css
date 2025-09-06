@@ -90,7 +90,7 @@ body.dark-mode .theme-toggle-btn .dark-icon {
 
 /* Dark mode section backgrounds */
 body.dark-mode .hero {
-    background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+    background: linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e40af 100%);
 }
 
 body.dark-mode .features {
@@ -189,7 +189,51 @@ body.dark-mode .multi-baby-feature p {
 }
 
 body.dark-mode .baby-icon {
-    filter: brightness(0);
+    filter: brightness(0) invert(1);
+}
+
+body.dark-mode .btn-primary {
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+body.dark-mode .btn-primary:hover {
+    background: linear-gradient(135deg, #4f46e5 0%, #3730a3 100%);
+}
+
+body.dark-mode .btn-secondary {
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+body.dark-mode .mood-sync {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+body.dark-mode .mood-sync::before {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="30" r="1.5" fill="rgba(167,139,250,0.10)"/><circle cx="80" cy="50" r="2" fill="rgba(167,139,250,0.07)"/><circle cx="40" cy="80" r="1" fill="rgba(167,139,250,0.12)"/><circle cx="90" cy="20" r="1.5" fill="rgba(167,139,250,0.08)"/><circle cx="10" cy="70" r="1" fill="rgba(167,139,250,0.11)"/><circle cx="60" cy="25" r="1.5" fill="rgba(167,139,250,0.06)"/><circle cx="30" cy="60" r="2" fill="rgba(167,139,250,0.09)"/><circle cx="75" cy="85" r="1" fill="rgba(167,139,250,0.13)"/></svg>') repeat;
+}
+
+body.dark-mode .mood-sync::after {
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="15" cy="45" r="8" fill="rgba(59,130,246,0.13)"/><circle cx="85" cy="25" r="6" fill="rgba(99,102,241,0.11)"/><circle cx="50" cy="75" r="7" fill="rgba(59,130,246,0.15)"/><circle cx="25" cy="15" r="9" fill="rgba(99,102,241,0.12)"/></svg>') repeat;
+}
+
+body.dark-mode .mood-card {
+    background: rgba(30, 41, 59, 0.8);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .mood-feature {
+    background: rgba(30, 41, 59, 0.6);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+body.dark-mode .mood-feature h4 {
+    color: #f1f5f9;
+}
+
+body.dark-mode .mood-feature p {
+    color: #94a3b8;
 }
 
 body.dark-mode .testimonial-card {
@@ -589,21 +633,21 @@ body.dark-mode .testimonial-author span {
 
 .baby-profiles {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    width: 90vw;
-    max-width: 600px;
-    height: auto;
+    width: 70vw;
+    max-width: 400px;
     gap: min(2rem, 3vw);
     margin: 0 auto;
     justify-items: center;
-    align-items: center;
+    align-items: stretch;
 }
 
 .baby-profile {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
     padding: min(2rem, 3vw);
     background: linear-gradient(135deg, #9C27B0, #A78BFA);
@@ -611,9 +655,7 @@ body.dark-mode .testimonial-author span {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease;
     width: 100%;
-    height: 100%;
-    min-width: 0;
-    min-height: 0;
+    min-height: min(180px, 25vw);
     color: white;
 }
 
@@ -639,35 +681,115 @@ body.dark-mode .testimonial-author span {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.add-baby {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding: min(2rem, 3vw);
-    background: linear-gradient(135deg, #9C27B0, #A78BFA);
-    border-radius: min(20px, 3vw);
-    color: white;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
-    min-width: 0;
-    min-height: 0;
+
+/* Mood Sync section */
+.mood-sync {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    position: relative;
+    overflow: hidden;
 }
 
-.add-baby:hover {
+.mood-sync::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="30" r="1.5" fill="rgba(156,39,176,0.06)"/><circle cx="80" cy="50" r="2" fill="rgba(156,39,176,0.04)"/><circle cx="40" cy="80" r="1" fill="rgba(156,39,176,0.08)"/><circle cx="90" cy="20" r="1.5" fill="rgba(156,39,176,0.05)"/><circle cx="10" cy="70" r="1" fill="rgba(156,39,176,0.07)"/><circle cx="60" cy="25" r="1.5" fill="rgba(156,39,176,0.03)"/><circle cx="30" cy="60" r="2" fill="rgba(156,39,176,0.06)"/><circle cx="75" cy="85" r="1" fill="rgba(156,39,176,0.09)"/></svg>') repeat;
+    animation: float 28s ease-in-out infinite;
+    opacity: 0.5;
+    z-index: 1;
+}
+
+.mood-sync::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="15" cy="45" r="8" fill="rgba(236,72,153,0.09)"/><circle cx="85" cy="25" r="6" fill="rgba(168,85,247,0.07)"/><circle cx="50" cy="75" r="7" fill="rgba(236,72,153,0.11)"/><circle cx="25" cy="15" r="9" fill="rgba(168,85,247,0.08)"/></svg>') repeat;
+    animation: float 42s ease-in-out infinite reverse;
+    opacity: 0.7;
+    z-index: 2;
+}
+
+.mood-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 80vw;
+    max-width: 600px;
+    gap: min(1.5rem, 2vw);
+    margin: 3rem auto;
+    justify-items: center;
+    align-items: stretch;
+    position: relative;
+    z-index: 3;
+}
+
+.mood-card {
+    background: white;
+    border-radius: min(16px, 3vw);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.mood-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.mood-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: min(16px, 3vw);
+}
+
+.mood-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 4rem;
+    position: relative;
+    z-index: 3;
+}
+
+.mood-feature {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.mood-feature:hover {
     transform: translateY(-5px);
 }
 
-.add-baby span:first-child {
+.mood-feature-icon {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    display: block;
 }
 
-.add-baby span {
-    font-weight: 600;
-    font-size: 1.1rem;
+.mood-feature h4 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 1rem;
+}
+
+.mood-feature p {
+    color: #64748b;
+    line-height: 1.6;
 }
 
 /* App preview section */
@@ -1202,14 +1324,12 @@ body.dark-mode .testimonial-author span {
     }
 
     .baby-profiles {
-        flex-direction: row;
-        justify-content: center;
-        gap: 1rem;
-        flex-wrap: wrap;
+        width: 80vw;
+        max-width: 350px;
+        gap: min(1.5rem, 2vw);
     }
 
-    .baby-profile,
-    .add-baby {
+    .baby-profile {
         min-width: 120px;
         padding: 1.25rem;
     }
@@ -1352,13 +1472,29 @@ body.dark-mode .testimonial-author span {
 
     .baby-profiles {
         width: 85vw;
-        max-width: 400px;
-        gap: min(1.5rem, 2vw);
+        max-width: 300px;
+        gap: min(1rem, 1.5vw);
     }
     
-    .baby-profile,
-    .add-baby {
+    .baby-profile {
         padding: min(1.5rem, 2.5vw);
+        min-height: min(140px, 20vw);
+    }
+    
+    .mood-grid {
+        width: 90vw;
+        max-width: 400px;
+        gap: min(1rem, 1.5vw);
+    }
+    
+    .mood-features {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+    
+    .mood-feature {
+        padding: 1.5rem;
     }
 }
 
