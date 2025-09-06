@@ -1,0 +1,21 @@
+# Netlify redirects file
+# This handles client-side routing and common redirects
+
+# Handle SPA routing (if you add React/Vue later)
+/*    /index.html   200
+
+# Redirect common paths
+/app              https://apps.apple.com/app/nestquest    302
+/download         https://apps.apple.com/app/nestquest    302
+/ios              https://apps.apple.com/app/nestquest    302
+/android          https://play.google.com/store/apps/details?id=com.nestquest    302
+/privacy          /privacy.html    200
+/terms            /terms.html      200
+/support          /support.html    200
+
+# Force HTTPS
+http://nestquest.com/*    https://nestquest.com/:splat    301!
+http://www.nestquest.com/*    https://nestquest.com/:splat    301!
+
+# Redirect www to non-www (or vice versa, choose one)
+https://www.nestquest.com/*    https://nestquest.com/:splat    301!

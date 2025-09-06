@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NestQuest - Privacy-First Baby Tracking & Family Wellness</title>
+    <meta name="description" content="Transform parenting into an engaging journey. Track baby milestones, earn achievements, and prioritize family wellness - all while keeping your data private and secure.">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/nestquest.svg">
+    <link rel="icon" type="image/png" href="assets/icons/icon.png">
+    <link rel="apple-touch-icon" href="assets/icons/icon.png">
+    
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <div class="mode-toggle">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+            <ion-icon name="sunny-outline" class="light-icon"></ion-icon>
+            <ion-icon name="moon-outline" class="dark-icon"></ion-icon>
+        </button>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="logo-container">
+                <img src="assets/icons/icon.png" alt="NestQuest Logo" class="logo-image">
+                <h1 class="logo">NestQuest</h1>
+            </div>
+            <p class="tagline">Privacy-First Baby Tracking & Family Wellness</p>
+            <p class="hero-description">
+                Transform parenting into an engaging journey. Track baby milestones, earn achievements, 
+                and prioritize family wellness - all while keeping your data private and secure.
+            </p>
+            
+            <div class="cta-buttons">
+                <a href="#download" class="btn btn-primary">
+                    <ion-icon name="download-outline"></ion-icon>
+                    Download Now
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    <ion-icon name="play-outline"></ion-icon>
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose NestQuest?</h2>
+            <p class="section-subtitle">
+                The only baby app that puts your privacy first while gamifying the parenting experience
+            </p>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <ion-icon name="shield-checkmark-outline"></ion-icon>
+                    </div>
+                    <h3 class="feature-title">Privacy & Security First</h3>
+                    <p class="feature-description">
+                        Local data storage with no cloud accounts. Your family's data stays on your device, 
+                        with peer-to-peer sync between caregivers.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <ion-icon name="heart-outline"></ion-icon>
+                    </div>
+                    <h3 class="feature-title">Comprehensive Baby Tracking</h3>
+                    <p class="feature-description">
+                        Track feeds, nappies, sleep, play, health, and weight. Monitor developmental 
+                        milestones through an interactive skill tree system.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <ion-icon name="people-outline"></ion-icon>
+                    </div>
+                    <h3 class="feature-title">Family-Centered Design</h3>
+                    <p class="feature-description">
+                        Multi-caregiver support with real-time sync. Track who did what, when, 
+                        with contribution analytics for all family members.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <ion-icon name="game-controller-outline"></ion-icon>
+                    </div>
+                    <h3 class="feature-title">Gamified Experience</h3>
+                    <p class="feature-description">
+                        Level up through caregiving activities, complete daily quests, and unlock 
+                        achievements for both baby progress and parenting milestones.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <ion-icon name="leaf-outline"></ion-icon>
+                    </div>
+                    <h3 class="feature-title">Parent Wellness Focus</h3>
+                    <p class="feature-description">
+                        Guided breathing exercises, mindfulness activities, mood tracking, and 
+                        self-care quests. Healthy parents = healthy babies.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </div>
+                    <h3 class="feature-title">Fully Customizable</h3>
+                    <p class="feature-description">
+                        Enable only what your family needs. Flexible themes, granular notifications, 
+                        and complete data export options.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activity Icons Section -->
+    <section class="activity-icons">
+        <div class="container">
+            <h2 class="section-title">Track Every Moment</h2>
+            <p class="section-subtitle">
+                Log activities with beautiful, animated icons just like in the app
+            </p>
+
+            <div class="icons-grid">
+                <div class="activity-icon-card">
+                    <video class="activity-video" autoplay muted loop playsinline>
+                        <source src="assets/videoicons/feed.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="activity-icon-card">
+                    <video class="activity-video" autoplay muted loop playsinline>
+                        <source src="assets/videoicons/nappy.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="activity-icon-card">
+                    <video class="activity-video" autoplay muted loop playsinline>
+                        <source src="assets/videoicons/sleep.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="activity-icon-card">
+                    <video class="activity-video" autoplay muted loop playsinline>
+                        <source src="assets/videoicons/play.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="activity-icon-card">
+                    <video class="activity-video" autoplay muted loop playsinline>
+                        <source src="assets/videoicons/cry.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="activity-icon-card">
+                    <video class="activity-video" autoplay muted loop playsinline>
+                        <source src="assets/videoicons/health.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="activity-icon-card">
+                    <video class="activity-video" autoplay muted loop playsinline>
+                        <source src="assets/videoicons/express.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="activity-icon-card">
+                    <video class="activity-video" autoplay muted loop playsinline>
+                        <source src="assets/videoicons/weight.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="activity-icon-card">
+                    <video class="activity-video" autoplay muted loop playsinline>
+                        <source src="assets/videoicons/skintoskin.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="multi-baby-feature">
+                <h3>Track Multiple Babies</h3>
+                <p>Each baby gets their own unique profile with individual tracking for activities, achievements, and skill development.</p>
+                <div class="baby-profiles">
+                    <div class="baby-profile">
+                        <img src="assets/icons/girl.svg" alt="Baby Profile" class="baby-icon">
+                        <span>Emma</span>
+                        <small>8 months</small>
+                    </div>
+                    <div class="baby-profile">
+                        <img src="assets/icons/boy.svg" alt="Baby Profile" class="baby-icon">
+                        <span>Oliver</span>
+                        <small>2 years</small>
+                    </div>
+                    <div class="add-baby">
+                        <ion-icon name="add-circle-outline"></ion-icon>
+                        <span>Add Baby</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Preview Section -->
+    <section class="app-preview">
+        <div class="container">
+            <h2 class="section-title">See NestQuest in Action</h2>
+            <p class="section-subtitle">
+                Beautiful, intuitive interface designed for tired parents
+            </p>
+
+            <div class="screenshot-carousel">
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="screenshot-slide active">
+                            <div class="phone-frame">
+                                <img src="assets/screenshots/IMG_2410.PNG" alt="NestQuest Home Screen" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-info">
+                                <h4>Home Dashboard</h4>
+                                <p>Quick activity logging and baby progress overview</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="phone-frame">
+                                <img src="assets/screenshots/IMG_2411.PNG" alt="NestQuest Activity Tracking" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-info">
+                                <h4>Activity Tracking</h4>
+                                <p>Log feeds, sleep, nappies and more with one tap</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="phone-frame">
+                                <img src="assets/screenshots/IMG_2412.PNG" alt="NestQuest Skill Tree" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-info">
+                                <h4>Skill Tree</h4>
+                                <p>Watch your baby unlock developmental milestones</p>
+                            </div>
+                        </div>
+                        <div class="screenshot-slide">
+                            <div class="phone-frame">
+                                <img src="assets/screenshots/IMG_2413.PNG" alt="NestQuest Analytics" class="screenshot-image">
+                            </div>
+                            <div class="screenshot-info">
+                                <h4>Insights & Analytics</h4>
+                                <p>Understand patterns and celebrate achievements</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" onclick="previousSlide()">
+                        <ion-icon name="chevron-back-outline"></ion-icon>
+                    </button>
+                    <div class="carousel-dots">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                    <button class="carousel-btn next-btn" onclick="nextSlide()">
+                        <ion-icon name="chevron-forward-outline"></ion-icon>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Parents Are Saying</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Finally, a baby app that doesn't sell my data! The gamification makes tracking fun instead of a chore."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Sarah M.</strong>
+                        <span>New Mom</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The skill tree approach to milestones is brilliant. My partner and I love seeing our baby 'level up'!"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>James K.</strong>
+                        <span>First-time Dad</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The parent wellness features are a game-changer. Self-care reminders when you need them most."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Maria L.</strong>
+                        <span>Mom of Two</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download" id="download">
+        <div class="container">
+            <h2 class="section-title">Ready to Start Your NestQuest?</h2>
+            <p class="section-subtitle">
+                Join thousands of families who've transformed their parenting journey
+            </p>
+
+            <div class="download-buttons">
+                <a href="#" class="store-button">
+                    <ion-icon name="logo-apple"></ion-icon>
+                    <div>
+                        <div class="store-text-small">Download on the</div>
+                        <div class="store-text-large">App Store</div>
+                    </div>
+                </a>
+                <a href="#" class="store-button">
+                    <ion-icon name="logo-google-playstore"></ion-icon>
+                    <div>
+                        <div class="store-text-small">Get it on</div>
+                        <div class="store-text-large">Google Play</div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="early-access">
+                <p>Coming Soon - Sign up for early access notifications</p>
+                <div class="email-signup">
+                    <input type="email" placeholder="Enter your email" class="email-input">
+                    <button class="signup-btn">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        Notify Me
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>NestQuest</h3>
+                    <p>Privacy-first baby tracking for modern families</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <a href="#features">Features</a>
+                        <a href="#download">Download</a>
+                        <a href="#pricing">Pricing</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Support</h4>
+                        <a href="#help">Help Center</a>
+                        <a href="#contact">Contact</a>
+                        <a href="#faq">FAQ</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <a href="#privacy">Privacy Policy</a>
+                        <a href="#terms">Terms of Service</a>
+                        <a href="#security">Security</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NestQuest. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
