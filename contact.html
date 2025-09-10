@@ -41,122 +41,84 @@
     </header>
 
     <!-- Contact Hero -->
-    <section class="contact-hero">
+    <section class="hero">
         <div class="container">
-            <h1 class="page-title">Get in Touch</h1>
-            <p class="page-subtitle">
-                We'd love to hear from you. Send us a message and we'll respond as soon as possible.
-            </p>
-        </div>
-    </section>
-
-    <!-- Contact Content -->
-    <section class="contact-content">
-        <div class="container">
-            <div class="contact-grid">
-                <!-- Contact Form -->
-                <div class="contact-form-section">
-                    <h2>Send us a Message</h2>
-                    <form class="contact-form" id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="subject">Subject</label>
-                            <select id="subject" name="subject" required>
-                                <option value="">Select a topic</option>
-                                <option value="general">General Question</option>
-                                <option value="support">Technical Support</option>
-                                <option value="feature">Feature Request</option>
-                                <option value="bug">Bug Report</option>
-                                <option value="privacy">Privacy Concern</option>
-                                <option value="partnership">Partnership</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">
-                            <img src="assets/ionicons.designerpack/send-outline.svg" alt="Send" class="btn-icon">
-                            Send Message
-                        </button>
-                    </form>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="contact-info-section">
-                    <h2>Other Ways to Reach Us</h2>
-                    
-                    <div class="contact-methods">
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <img src="assets/ionicons.designerpack/mail-outline.svg" alt="Email">
-                            </div>
-                            <div class="contact-details">
-                                <h3>Email Support</h3>
-                                <p>hello@nestquest.app</p>
-                                <span class="response-time">Usually responds within 24 hours</span>
-                            </div>
-                        </div>
-
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <img src="assets/ionicons.designerpack/chatbubble-outline.svg" alt="Community">
-                            </div>
-                            <div class="contact-details">
-                                <h3>Community Forum</h3>
-                                <p>Join our parent community</p>
-                                <span class="response-time">Coming soon</span>
-                            </div>
-                        </div>
-
-                        <div class="contact-method">
-                            <div class="contact-icon">
-                                <img src="assets/ionicons.designerpack/logo-twitter.svg" alt="Social Media">
-                            </div>
-                            <div class="contact-details">
-                                <h3>Social Media</h3>
-                                <p>Follow us for updates</p>
-                                <span class="response-time">@nestquest_app</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- FAQ Link -->
-                    <div class="faq-link">
-                        <h3>Before you contact us...</h3>
-                        <p>Check our FAQ page for quick answers to common questions.</p>
-                        <a href="faq.html" class="btn btn-secondary">
-                            <img src="assets/ionicons.designerpack/help-circle-outline.svg" alt="FAQ" class="btn-icon">
-                            View FAQ
-                        </a>
-                    </div>
-                </div>
+            <div class="hero-content">
+                <h1 class="page-title">Get in Touch</h1>
+                <p class="page-subtitle">
+                    Multiple ways to reach the NestQuest support team. Quick responses and helpful assistance for all user inquiries.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- Privacy Notice -->
-    <section class="privacy-notice">
+    <!-- Contact Content -->
+    <section class="features">
         <div class="container">
-            <div class="privacy-card">
-                <div class="privacy-icon">
-                    <img src="assets/ionicons.designerpack/shield-checkmark-outline.svg" alt="Privacy">
+            <h2 class="section-title">Contact Methods</h2>
+            <p class="section-subtitle">
+                Choose the contact method that works best for your needs. The support team is committed to providing timely assistance.
+            </p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/ionicons.designerpack/mail-outline.svg" alt="">
+                    </div>
+                    <h3 class="feature-title">Email Support</h3>
+                    <p class="feature-description">
+                        Direct email support for technical questions, feature requests, and general inquiries. Responses typically within 24 hours.
+                    </p>
                 </div>
-                <div class="privacy-content">
-                    <h3>Your Privacy Matters</h3>
-                    <p>We only use your contact information to respond to your message. We don't add you to mailing lists or share your information with third parties. Read our <a href="privacy.html">Privacy Policy</a> for more details.</p>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/ionicons.designerpack/chatbubble-outline.svg" alt="">
+                    </div>
+                    <h3 class="feature-title">Live Chat</h3>
+                    <p class="feature-description">
+                        Real-time chat support for immediate assistance with app usage, troubleshooting, and quick questions during business hours.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/ionicons.designerpack/call-outline.svg" alt="">
+                    </div>
+                    <h3 class="feature-title">Phone Support</h3>
+                    <p class="feature-description">
+                        Voice support for complex technical issues and detailed troubleshooting. Available by appointment for premium support cases.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/ionicons.designerpack/help-circle-outline.svg" alt="">
+                    </div>
+                    <h3 class="feature-title">Help Center</h3>
+                    <p class="feature-description">
+                        Comprehensive self-service resources including tutorials, troubleshooting guides, and frequently asked questions for immediate assistance.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/ionicons.designerpack/document-text-outline.svg" alt="">
+                    </div>
+                    <h3 class="feature-title">Documentation</h3>
+                    <p class="feature-description">
+                        Detailed technical documentation, user guides, and feature explanations to help users maximize their NestQuest experience.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="assets/ionicons.designerpack/people-outline.svg" alt="">
+                    </div>
+                    <h3 class="feature-title">Community</h3>
+                    <p class="feature-description">
+                        User community forums where parents can share experiences, tips, and get peer support from other NestQuest users.
+                    </p>
                 </div>
             </div>
         </div>
